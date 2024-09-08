@@ -6,7 +6,7 @@ This repository contains the configuration files to run an Arbitrum node using D
 
 - Docker
 - Docker Compose
-- Git (optional, for cloning the repository)
+- RPC urls for Ethereum Mainnet and Beacon Chain
 
 ## Setup Instructions
 
@@ -53,6 +53,5 @@ docker-compose down
 
 ## Additional Information
 
-- The node data is stored in the `./data` directory.
+- The bulk of the data is stored in the docker data directory (on MacOS, this is `~/Library/Containers/com.docker.docker/Data/vms/0/data/`).
 - The node exposes RPC on ports 8547 and 8548.
-- Make sure to keep your `.env` file secure and do not share it publicly.
