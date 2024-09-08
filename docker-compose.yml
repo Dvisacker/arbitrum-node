@@ -1,0 +1,22 @@
+version: '3'
+services:
+  arbitrum-node:
+    image: offchainlabs/nitro-node:v3.1.0-7d1d84c
+    ports:
+      - "8547:8547"
+      - "8548:8548"
+    volumes:
+      - ./data:/home/user/.arbitrum
+    env_file:
+      - .env
+    command:
+      - --parent-chain.connection.url=${PARENT_CHAIN_URL}
+      - --parent-chain.blob-client.beacon-url=${BEACON_URL}
+      - --chain.id=42161
+      - --http.api=net,web3,eth,debug
+      - --http.corsdomain=*
+      - --http.addr=0.0.0.0
+      - --http.vhosts=*
+      - --init.url=https://snapshot.arbitrum.foundation/arb1/nitro-pruned.tar
+      - --init.prune=full
+      - --node.batch-poster.post-4844-blobs=true
