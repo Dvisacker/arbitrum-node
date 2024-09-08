@@ -1,5 +1,0 @@
-INFO [09-08|06:02:07.614] Running Arbitrum nitro node              revision=v3.1.0-7d1d84c vcs.time=2024-07-12T14:57:29-07:00
-INFO [09-08|06:02:07.918] connected to l1 chain                    l1url=https://eth-mainnet.alchemyapi.io/v2/fVddI-_ivqrBOeXVNVF2uqSvzZfSgwrw l1chainid=1
-INFO [09-08|06:02:08.489] Defaulting to pebble as the backing database
-INFO [09-08|06:02:08.491] Allocated cache and file handles         database=/home/user/.arbitrum/arb1/nitro/l2chaindata cache=16.00MiB handles=16
-INFO [09-08|06:02:08.493] Downloading initial database             url=https://snapshot.arbitrum.foundation/arb1/nitro-pruned.tar
